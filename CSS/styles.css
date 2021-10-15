@@ -18,12 +18,12 @@ body {
 .jumbotron {
     margin: 0px;
     padding: 30px;
-    color: white;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    color: rgb(234, 234, 241);
+    background-image: linear-gradient(to right, #0e5e03, #30c544de, #0af30a54);
 }
 
 .navbar {
-    background-color: #901CAD;
+    background-color: #0bb305;
 }
 
 h1, h2, h3 {
@@ -36,21 +36,21 @@ h1 {
 }
 
 h2 {
-    color: #3046c5;
+    color: #049aa5e3;
     text-transform: uppercase;
 }
 
 header h2 {
-    color: #cec8ff;
+    color: #049aa5e3;
     font-family: "Open Sans", sans-serif;
 }
 
 h3 {
-    color: white;
+    color: #049aa5e3;
 }
 
 .site-footer {
-    background-image: linear-gradient(#CEC8FF, white);
+    background-image: linear-gradient(#049aa5e3, white);
     padding: 20px 0;
 }
 
@@ -76,7 +76,7 @@ a:hover {
 }
 
 .carousel {
-    border: solid #5637DD;
+    border: solid #00a816b6;
 }
 
 #carouselButton {
