@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Madelyn Bonzi">
-    <meta name="description" content="The Neighborhood Acai and Juice Bar Menu">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    
-    <!-- Additional CSS must be placed after Bootstrap CSS-->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Madelyn Bonzi" />
+        <meta name="description" content="The Neighborhood Acai and Juice Bar Menu" />
 
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-    <!--
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Paprika&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    -->
-        
-    <link rel="stylesheet" href="./CSS/styles.css" />
-        
-    <title>Acai and Juice Bar Menu</title>
+        <!-- Additional CSS must be placed after Bootstrap CSS-->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" />
+
+        <!--
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Paprika&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        -->
+
+        <link rel="stylesheet" href="./CSS/styles.css" />
+
+        <title>Acai and Juice Bar Menu</title>
     </head>
 
 <body>
+    <header>
+        <img src="./Acai & Juice Bar/images/logo.jpg" class="logo" />
+    </header>
 
     <div class="container">
+        <div class="col col-sm-4">
+            <h3>Menu Items</h3>
+            <h6>Click to expand:</h6>
+            <div id="accordion">
+                <div class="card">
+                    <div id="accordionMenu" class="accordion">
+                        <div class="acai-cali card accordion-item">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"  aria-expanded="true" aria-controls="collapseOne" >
+                                        Acai Bowls
+                                    </button>
+                                </h5>
+                            </div>
+                        <div id="collapseOne" class="accodion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordion" >
+                            <div class="card-body accodion-body">
+                                <img src="./Acai & Juice Bar/images/cali-creamin-bowl.jpg" height="210"/>
+                                <h2>Cali Creamin Bowl</h2>
+                                <p class="bowl-ingredients">
+                                    These are the ingredients in the bowl
+                                </p>
+                                <p class="description">
+                                    This delicious bowl is topped with!
+                                </p>
 
-        <header>
-        <img src="./Acai & Juice Bar/images/logo.jpg" class="logo">
-        </header>
-
-        <main>
-        <div id="accordionMenu" class="accordion">
-            <div class="acai-cali card accordion-item">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Acai Bowls
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapseOne" class="accodion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body accodion-body">
-                        <img src="./Acai & Juice Bar/images/cali-creamin-bowl.jpg" height="210"/>
-                            <h2>Cali Creamin Bowl</h2>
-                            <p class="bowl-ingredients">
-                                These are the ingredients in the bowl
-                            </p>
-                            <p class="description">
-                                This delicious bowl is topped with!
-                            </p>
-                            <div class="acai-spooners ">
                                 <img src="./Acai & Juice Bar/images/spooners-cove-bowl.jpg " height="210"/>
                                 <h2>Spooners Cove Bowl</h2>
                                 <p class="bowl-ingredients">
@@ -68,9 +69,7 @@
                                 <p class="description">
                                     This delicious bowl is topped with!
                                 </p>
-                            </div>
                             
-                            <div class="acai-pumpkin">
                                 <img src="./Acai & Juice Bar/images/pumpkin-spice-bowl.jpg" height="210"/>
                                 <h2>Pumpkin Spice Bowl</h2>
                                 <p class="bowl-ingredients">
@@ -79,9 +78,7 @@
                                 <p class="description">
                                     This delicious bowl is topped with!
                                 </p>
-                            </div>
 
-                            <div class="acai-peppermint">
                                 <img src="./Acai & Juice Bar/images/peppermint-bowl.jpg" height="210" />
                                 <h2>Peppermint Bowl</h2>
                                 <p class="bowl-ingredients">
@@ -90,9 +87,7 @@
                                 <p class="description">
                                     This delicious bowl is topped with!
                                 </p>
-                            </div>
-
-                            <div class="acai-peachstreet">
+                
                                 <img src="./Acai & Juice Bar/images/peachstreet-bowl.jpg" height="210" />
                                 <h2>Peach Street Bowl</h2>
                                 <p class="bowl-ingredients">
@@ -101,9 +96,7 @@
                                 <p class="description">
                                     This delicious bowl is topped with!
                                 </p>
-                            </div>
-
-                            <div class="acai-bootstrap">
+                   
                                 <img src="./Acai & Juice Bar/images/acai-bowl.jpg" height="210" />
                                 <h2>Bootstrap Acai Bowl</h2>
                                 <p class="bowl-ingredients">
@@ -113,26 +106,21 @@
                                     This delicious bowl is topped with!
                                 </p>
                             </div>
+                        </div>
                     </div>
-                </div> 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Accordion Item #2
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                      </div>
-                    </div>
-                  </div>
+                </div>
             </div>
         </div>
-        </main>
+    </div>                
 
-        <footer>
-        <img src="./Acai & Juice Bar/images/berries.jpg" class="logo">
-        </footer>
-    </div>
-</body>
+    <footer>
+      <img src="./Acai & Juice Bar/images/berries.jpg" class="logo" />
+    </footer>
+
+    <!-- JQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
