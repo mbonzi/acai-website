@@ -59,14 +59,14 @@
             <div class="collapse navbar-collapse" id="homeNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" id="Home">
+                        <a class="nav-link" href="./index.html" id="Home">
                             <i class="fa fa-solid fa-home fa-lg"></i> 
                             Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./menu.html">
-                            <i class="fa fa-solid fa-fork-knife fa-lg"></i> 
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-solid fa-spoon fa-lg"></i> 
                             Menu
                         </a>
                     </li>
@@ -78,22 +78,36 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contactus.html">
-                            <i class="fa fa-solid fa-location-dot fa-lg"></i> 
+                            <i class="fa fa-solid fa-map fa-lg"></i> 
                             Contact Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="navbar-brand">
-                            <img src="./Acai & Juice Bar/images/strawberry.jpg" height="40" width="40" />
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-4">
+                <a href="https://www.clover.com/online-ordering/neighborhood-paso" target="_blank" class="nav-link">
+                    <i class="btn btn-success btn-outline-success text-white btn-lg text-nowrap">
+                        Order Online-Paso
+                    </i>
+                </a>
+            </div>
+            <div class="col col-sm-5">
+                <a href="https://www.clover.com/online-ordering/the-neighborhood--foothill-san-luis-obispo" target="_blank" class="nav-link">
+                    <i class="btn btn-success btn-outline-success text-white btn-lg text-nowrap">
+                        Order Online-SLO
+                    </i>
+                </a>
+            </div>
+        </div>
 
     <div class="container">
-        <div class="col col-xs-3 col-sm-6 col-md-12">
+        <div class="row">
+        <div class="col col-xs-6 col-sm-12">
             <h3>Menu Items</h3>
             <h6>Click title to expand:</h6>
             <div id="accordion">
@@ -165,18 +179,54 @@
                             </div>
                         </div>
 
-                        <div class="card">
-                            <div class="card-header">
+                        <div class="juice card accordion-item">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"  aria-expanded="true" aria-controls="collapseTwo" >
+                                        Single Juices
+                                    </button>
+                                </h5>
+                            </div>
+                        <div id="collapseTwo" class="accodion-collapse collapse show" aria-labelledby="headingTwo" data-parent="#accordion" >
+                            <div class="card-body accodion-body">
+                                <img src="./Acai & Juice Bar/images/citrus-detox-juice.jpg" height="210"/>
+                                <h2>Citrus Detox Juice</h2>
+                                <p class="juice-ingredients">
+                                    These are the ingredients in juice
+                                </p>
+                                <p class="description">
+                                    This delicious juice is great for!
+                                </p>
 
+                                <img src="./Acai & Juice Bar/images/ginger-bliss-juice.jpg" height="210"/>
+                                <h2>Ginger Bliss Juice</h2>
+                                <p class="juice-ingredients">
+                                    These are the ingredients in juice
+                                </p>
+                                <p class="description">
+                                    This delicious juice is great for!
+                                </p>
+
+                                <img src="./Acai & Juice Bar/images/yellow-juice.jpg" height="210"/>
+                                <h2>Lemon Carrot Juice</h2>
+                                <p class="juice-ingredients">
+                                    These are the ingredients in juice
+                                </p>
+                                <p class="description">
+                                    This delicious juice is great for!
+                                </p>
 
                             </div>
-                        </div>   
+                        </div>
+                        
 
                     </div>
+                </div>
                 </div>
             </div>
         </div>
     </div> 
+    </div>
 
     <footer class="site-footer">
         <div class="container">
@@ -241,7 +291,7 @@
             </div>
         </div>
     </footer>
-
+    
     <!-- JQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
