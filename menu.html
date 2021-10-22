@@ -48,17 +48,7 @@
                 <div class="col">
                     <h1>The Neighborhood</h1>
                     <h2>Acai and Juice Bar</h2>
-                </div>
-
-                <!-- Call to order button with tooltip -->
-                <div class="col col-sm-2 col-xl-2 mt-4">
-                    <a href="tel:18053692119" role="button" class="btn btn-lg btn-success btn-link text-nowrap text-white mx-1 my-1" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>(805) 369-2119</strong>">Order by Phone: Paso
-                    </a>
-
-                    <a href="tel:18054394033" role="button" class="btn btn-lg btn-success btn-link text-nowrap text-white mx-1 my-1" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>(805) 439-4033</strong>">Order by Phone: SLO
-                    </a>
-            
-                </div>
+                </div>            
             </div>
         </div>
     </header>
@@ -105,59 +95,391 @@
         </div>
     </nav>
     
+    <!-- Ordering Options: Online + Phone -->
     <div class="container">
         <div class="row">
-            <div class="col col-sm-4">
+            <div class="col col-sm-6">
                 <a href="https://www.clover.com/online-ordering/neighborhood-paso" target="_blank" class="nav-link">
                     <i class="btn btn-success btn-outline-success text-white btn-lg text-nowrap">
-                        Order Online-Paso
+                        Order Online - Paso
                     </i>
                 </a>
             </div>
-            <div class="col col-sm-5">
+            <div class="col col-sm-6">
                 <a href="https://www.clover.com/online-ordering/the-neighborhood--foothill-san-luis-obispo" target="_blank" class="nav-link">
                     <i class="btn btn-success btn-outline-success text-white btn-lg text-nowrap">
-                        Order Online-SLO
+                        Order Online - SLO
                     </i>
                 </a>
             </div>
         </div>
 
+        <div class="row">
+            <div class="col col-sm-6">
+                <a href="tel:18053692119" role="button" class="btn btn-lg btn-success btn-link text-nowrap text-white mx-1 my-1" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>(805) 369-2119</strong>">
+                    Order by Phone - Paso
+                </a>
+            </div>
+            <div class="col col-sm-6">
+                <a href="tel:18054394033" role="button" class="btn btn-lg btn-success btn-link text-nowrap text-white mx-1 my-1" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>(805) 439-4033</strong>">
+                    Order by Phone - SLO
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Menu: Accordion with item cards-->
+    <div class="container">
+           <div class="row row-content align-items-center">
+                <div class="col">
+                    <h3>Menu Items</h3>
+                    <div id="accordion">
+
+                        <!-- Acai Bowls -->
+                        <div class="card">
+                            <div role="tab" class="card-header col-12">
+                                <h4>
+                                    <a data-toggle="collapse" data-target="#acai-bowls">
+                                        Acai Bowls
+                                    </a>
+                                </h4>
+                                
+                                <div class="collapse show card  col-6" id="acai-bowls" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/cali-creamin-bowl.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Cali Creamin' Bowl
+                                        </h5>
+                                        <p class="card-text">
+                                            Ingredients: acerola & orange essential oil which creates a tangy and refreshing base. 
+                                            <br>
+                                            Toppings: granola, juicy nectarine slices, strawberries, and coconut flakes
+                                        </p>
+                                    </div>
+                                </div>
+                               
+                                <div class="collapse show card col-6"   data-parent="#accordion" id="acai-bowls">
+                                    <img src="./Acai & Juice Bar/images/spooners-cove-bowl.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Spooner's Cove Bowl
+                                        </h5>
+                                        <p class="card-text">
+                                            Ingredients: Pineapple, banana, blue spirulina, lime zest, aloe vera, coconut water. 
+                                            <br>
+                                            Toppings: Hemp granola, banana, mango, kiwi, coconut flakes
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="collapse show card  col-6" id="acai-bowls" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/pirates-cove-bowl.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Pirates Cove Bowl
+                                        </h5>
+                                        <p class="card-text">
+                                            Ingredients: Acai, pitaya, pineapple, banana, papaya, tangerine juice.
+                                            <br>
+                                            Toppings: Hemp, granola, banana, strawberry, chia seeds.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="acai-bowls" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/watermelon-fresca-bowl.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Watermelon Fresca Bowl
+                                        </h5>
+                                        <p class="card-text">
+                                            Ingredients: Fresh pressed cucumber juice, watermelon, mint, acai, pineapple, banana. 
+                                            <br>
+                                            Toppings: Granola, fresh watermelon, kiwi, coconut.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="acai-bowls" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/blueberry-twist-bowl.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Vine Street Bowl
+                                        </h5>
+                                        <p class="card-text">
+                                            Ingredients: Blueberry, banana, cinnamon, lemon zest, almond milk.
+                                            <br>
+                                            Toppings: Hemp, granola, banana, blueberries, flax seed.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="acai-bowls" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/acai-bowl.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Palm Street Bowl
+                                        </h5>
+                                        <p class="card-text">
+                                            Ingredients: Pitaya, banana, pineapple, coconut butter, cashew milk.
+                                            <br>
+                                            Toppings: Hemp granola, banana, mango, coconut flakes. 
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="acai-bowls" data-parent="#accordion">
+                                    <h5>
+                                        Pricing:
+                                    </h5>
+                                    <p>
+                                        Small bowl: $9.00 /
+                                        Large bowl: $10.50
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Single Juices -->
+                        <div class="card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#juice">
+                                        Cold Pressed Juice  
+                                    </a>
+                                </h4>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/citrus-detox-juice.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Citrus Detox Juice
+                                        </h5>
+                                        <p class="card-text">
+                                            Orange | Lemon | Pineapple | Turmeric | Cayenne Pepper 
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/ginger-bliss-juice.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Ginger Bliss
+                                        </h5>
+                                        <p class="card-text">
+                                            Ginger | Red Apple | Green Apple | Lemon 
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/watermelon-refresher-juice.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Watermelon Refresher
+                                        </h5>
+                                        <p class="card-text">
+                                            Watermelon | Mint | Lime | Camu Camu 
+                                            <br>
+                                            *Seasonal 
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/food/cold-press-juices_files/164966265_279831566885128_1036026064429528287_n.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            24 Carrot
+                                        </h5>
+                                        <p class="card-text">
+                                            Carrot | Orange | Pineapple | Ginger | Turmeric | Lime | Cinnamon 
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/green.jpg " class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Jala Juice
+                                        </h5>
+                                        <p class="card-text">
+                                            Jalapeno | Green Apple | Pineapple | Dill | Lime | Lemongrass Essential Oil
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/lemonade.jpg " class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Charcoal Lavendar Lemonade
+                                        </h5>
+                                        <p class="card-text">
+                                            Activated Charcoal | Lavender | Lemon | Maple Syrup | Filtered H20
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/power-greens.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Power Greens
+                                        </h5>
+                                        <p class="card-text">
+                                            Kale | Spinach | Cucumber | Celery | Parsley | Lemon
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/mean-greens.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Mean Greens
+                                        </h5>
+                                        <p class="card-text">
+                                            Kale | Spinach | Cucumber | Celery | Green Apple | Ginger | Lemon
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/beet-juice.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            I Heart Beets
+                                        </h5>
+                                        <p class="card-text">
+                                            Beets | Apple | Celery | Cilantro | Lime
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/green-drink.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Sweet Greens
+                                        </h5>
+                                        <p class="card-text">
+                                            Celery | Pineapple | Pear | Cucumber | Kale | Spinach | Lime
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/celery.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Celery Juice
+                                        </h5>
+                                        <p class="card-text">
+                                            JUST Celery!
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <!-- Food Accordion -->
+                        <div class="card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#juice">
+                                        Cold Pressed Juice  
+                                    </a>
+                                </h4>
+
+                                <div class="collapse show card  col-6" id="juice" data-parent="#accordion">
+                                    <img src="./Acai & Juice Bar/images/citrus-detox-juice.jpg" class="card-img-top" alt="card image cap">
+                                    <div class="card-body">
+                                        <H5 class="d-none d-sm-block card-title">
+                                            Citrus Detox Juice
+                                        </h5>
+                                        <p class="card-text">
+                                            Orange | Lemon | Pineapple | Turmeric | Cayenne Pepper 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+
+
+                        
+                        <div class="card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#node">
+                                        Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small>
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="node" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+    
+
+
+
+    <!-- Menu Accodion -->
     <div class="container">
         <div class="row">
-        <div class="col col-xs-6 col-sm-12">
-            <h3>Menu Items</h3>
-            <h6>Click title to expand:</h6>
-            <div id="accordion">
-                <div class="card">
+            <div class="col-xs-6 col-sm-12 my-2">
+                <h3>Menu Items</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-12 mx-1">
+                <h6>Click title to expand:</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="accordion">
                     <div id="accordionMenu" class="accordion">
                         <div class="acai-cali card accordion-item">
                             <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
+                                <h2 class="mb-0">
                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"  aria-expanded="true" aria-controls="collapseOne" >
                                         Acai Bowls
                                     </button>
-                                </h5>
+                                </h2>
                             </div>
-                        <div id="collapseOne" class="accodion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordion" >
-                            <div class="card-body accodion-body">
-                                <img src="./Acai & Juice Bar/images/cali-creamin-bowl.jpg" height="210"/>
-                                <h2>Cali Creamin Bowl</h2>
-                                <p class="bowl-ingredients">
-                                    These are the ingredients in the bowl
-                                </p>
-                                <p class="description">
-                                    This delicious bowl is topped with!
-                                </p>
+                             
+                            <div id="collapseOne" class="accodion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordion" >
+                                <div class="card-img-top px-2 py-2 accodion-body col-xs-12 col-sm-4">
+                                    <img class="card-img-top px-2 py-2" src="./Acai & Juice Bar/images/cali-creamin-bowl.jpg" />
+                                    <h2>Cali Creamin Bowl</h2>
+                                    <p class="bowl-ingredients">
+                                        These are the ingredients in the bowl
+                                    </p>
+                                    <p class="description">
+                                    </p>
+                                </div>
 
-                                <img src="./Acai & Juice Bar/images/spooners-cove-bowl.jpg " height="210"/>
-                                <h2>Spooners Cove Bowl</h2>
+                                <div class="card-img-top px-2 py-2 accodion-body col-xs-12 col-sm-4" >
+                                    <img class="card-img-top px-2 py-2" src="./Acai & Juice Bar/images/spooners-cove-bowl.jpg " />
+                                    <h2>Spooners Cove Bowl</h2>
                                 <p class="bowl-ingredients">
                                     These are the ingredients in the bowl
                                 </p>
                                 <p class="description">
-                                    This delicious bowl is topped with!
                                 </p>
+                                </div>
                             
                                 <img src="./Acai & Juice Bar/images/pumpkin-spice-bowl.jpg" height="210"/>
                                 <h2>Pumpkin Spice Bowl</h2>
@@ -165,7 +487,6 @@
                                     These are the ingredients in the bowl
                                 </p>
                                 <p class="description">
-                                    This delicious bowl is topped with!
                                 </p>
 
                                 <img src="./Acai & Juice Bar/images/peppermint-bowl.jpg" height="210" />
@@ -174,7 +495,6 @@
                                     These are the ingredients in the bowl
                                 </p>
                                 <p class="description">
-                                    This delicious bowl is topped with!
                                 </p>
                 
                                 <img src="./Acai & Juice Bar/images/peachstreet-bowl.jpg" height="210" />
@@ -183,7 +503,6 @@
                                     These are the ingredients in the bowl
                                 </p>
                                 <p class="description">
-                                    This delicious bowl is topped with!
                                 </p>
                    
                                 <img src="./Acai & Juice Bar/images/acai-bowl.jpg" height="210" />
@@ -192,7 +511,6 @@
                                     These are the ingredients in the bowl
                                 </p>
                                 <p class="description">
-                                    This delicious bowl is topped with!
                                 </p>
                             </div>
                         </div>
@@ -236,15 +554,12 @@
 
                             </div>
                         </div>
-                        
-
                     </div>
-                </div>
                 </div>
             </div>
         </div>
     </div> 
-    </div>
+    
 
     <footer class="site-footer">
         <div class="container">
@@ -319,6 +634,10 @@
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        $('#myCollapsible').collapse({
+            toggle: false
         })
     </script>
 
