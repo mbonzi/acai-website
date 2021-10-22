@@ -35,11 +35,11 @@
     </head>
 
 <body>
-    <!-- Header/Title with order now btn -->
+    <!-- Header/Title-->
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row row-content align-items-center">
-                <div class="col col-md-4 col-xl-2 mt-4">
+                <div class="col col-sm-4 col-xl-2 mt-4">
                     <a href="./index.html">
                         <img class="logo" src="./Acai & Juice Bar/images/logo.jpg" alt="img-fluid" />
                     </a>
@@ -50,10 +50,14 @@
                     <h2>Acai and Juice Bar</h2>
                 </div>
 
-                <div class="col col-md-4 col-xl-2 mt-4">
-                    <a class="btn btn-success btn-outline-success text-white btn-lg text-nowrap" data-toggle="modal" role="button" data-target="#orderModal" >
-                        Order Now
+                <!-- Call to order button with tooltip -->
+                <div class="col col-sm-2 col-xl-2 mt-4">
+                    <a href="tel:18053692119" role="button" class="btn btn-lg btn-success btn-link text-nowrap text-white mx-1 my-1" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>(805) 369-2119</strong>">Order by Phone: Paso
                     </a>
+
+                    <a href="tel:18054394033" role="button" class="btn btn-lg btn-success btn-link text-nowrap text-white mx-1 my-1" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>(805) 439-4033</strong>">Order by Phone: SLO
+                    </a>
+            
                 </div>
             </div>
         </div>
@@ -101,6 +105,7 @@
         </div>
     </nav>
 
+    <!-- Location Cards -->
     <div class="row">
         <div class="col-xs-12 col-sm-6">
         <!-- Paso Robles Location -->
@@ -296,6 +301,12 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 </body>
 </html>
